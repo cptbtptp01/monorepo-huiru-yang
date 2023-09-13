@@ -1,0 +1,41 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python virtual environment
+venv/
+.env
+
+# Mac OS system files
+.DS_Store
+
+# IDE-specific files and directories
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Compiled Python files
+*.pyc
+
+# Log files
+*.log
+
+# Other temporary or backup files
+*.bak
+*.swp
+*~
+
+# Local configuration files
+local_settings.py
+
+# Ignore the build and distribution directories
+build/
+dist/
+
+# Ignore pipenv virtual environment
+Pipfile.lock
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
