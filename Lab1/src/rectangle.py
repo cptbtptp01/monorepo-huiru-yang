@@ -1,16 +1,5 @@
 from abc import ABC, abstractmethod
 
-
-class Shape(ABC):
-    @abstractmethod
-    def set_values(self):
-        pass
-
-    @abstractmethod
-    def area(self):
-        pass
-
-
 """
  Sample modified from CS5500, Mike Shah
 
@@ -20,7 +9,17 @@ class Shape(ABC):
 """
 
 
-class Rectangle:
+class Shape(ABC):
+    @abstractmethod
+    def set_values(self, width, height):
+        pass
+
+    @abstractmethod
+    def area(self):
+        pass
+
+
+class Rectangle(Shape):
     def __init__(self):
         self._width = None
         self._height = None
@@ -30,7 +29,8 @@ class Rectangle:
         self._height = y
 
     def area(self):
-        return self._width * self._height
+        return self._width * self._height if self._width is not None and self._height is not None \
+            else "Width and height must be set before calculating area"
 
 
 if __name__ == "__main__":
