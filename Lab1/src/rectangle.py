@@ -30,7 +30,7 @@ class Rectangle(Shape):
 
     def area(self):
         return self._width * self._height if self._width is not None and self._height is not None \
-            else "Width and height must be set before calculating area"
+            else "Width and height must be set before calculating area."
 
 
 if __name__ == "__main__":
