@@ -24,12 +24,59 @@ Sometimes it is also nice to make sure you have time to sit down and learn a tec
 
 **Note:** I encourage the use of VIM (Any platform), PyCharm (my preferred), or Visual Studio Code as your IDE of choice. 
 
+### notes
+- string format() method with placeholders
+	+ txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+	+ txt2 = "My name is {0}, I'm {1}".format("John",36)
+	+ txt3 = "My name is {}, I'm {}".format("John",36)
+- string slicing
+	+ reverse [::-1]
+	+ every other [::2]
+- os module
+	+ `current_env = os.environ.get("ENV_NAME", DEVELOPMENT)`
+- pprint module
+	+ print data structures in a readable, pretty way
+- json module
+	+ turn to json: json.dumps(...), json.dump(...)
+	+ turn back: json.loads(...)
+- request package
+- flask: web framework
+	+ app.run(debug=True)
+
 # Task 2
 
 Now that you know the basics of Python, your next task is to become more familiar with advanced features of Python. 
 
 You will next complete the course: https://www.linkedin.com/learning/advanced-python/welcome?u=74653650
 
+### notes
+- string decode and encode, utf-8, utf-32
+- from string import Template, .substitute()
+- built-in function
+	+ any(), all()
+	+ min(), max(), sum()
+	+ iter()
+	+ enumerate()
+	+ zip()
+	+ filter()
+	+ map() creates new sequence of values
+- itertools module
+	+ cycle()
+	+ count()
+	+ accumulate()
+	+ chain()
+	+ takewhile(), dropwhile()
+-  `.__doc__`
+-  lambda(parameters) : (expression)
+-  collections
+	+  namedtuple
+	+  defaultdict
+	+  counters
+	+  OrderedDict
+	+  deque: double-ended queue
+- enum
+- repr
+- logging
 
 # Task 3
 
